@@ -15,7 +15,7 @@ class IndexController extends BaseController {
      *                   渲染页面
      *----------------------------------------------*/
     async main() {
-        this.res.send('hello world')
+        this.res.render('index', {helloWorld: '欢迎来到express项目模板'})
     }
 
     /**-----------------------------------------------
