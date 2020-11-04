@@ -26,7 +26,8 @@
         "npm": ">=7.0.3"
     },
     "dependencies": {
-        "@npm-node/tplhb": "^0.0.0-alpha",
+        "@npm-node/hbhelpers": "^0.0.2-alpha",
+        "@npm-node/tplhb": "^0.0.1-alpha",
         "compression": "^1.7.4",
         "express": "^4.17.1"
     }

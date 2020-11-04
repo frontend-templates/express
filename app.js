@@ -23,6 +23,7 @@ const compression = require('compression');
  *                 公司规范的npm包
  *----------------------------------------------*/
 const tplHb = require('@npm-node/tplhb');
+const hbHelpers = require('@npm-node/hbhelpers');
 // TODO logger记录日志npm包
 // TODO sentry哨兵npm包
 
@@ -53,8 +54,8 @@ app.use(compression());
 // (start) : 设置模板
 tplHb(app, {
     viewsPath: path.resolve(__dirname, 'views'),
-    helpers: {},
-    partialsDirectoryName: 'partial',
+    helpers: hbHelpers,
+    partialsDirectoryName: 'partials',
     getTemplateFromCache: true
 });
 // 默认模板引擎
